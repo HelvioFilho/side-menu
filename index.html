@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- <link rel="icon" type="image/png" href=""> -->
+	<title>Side menu animate</title>
+	<script src="https://kit.fontawesome.com/1bf37257ed.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<style>
+		.main{
+			margin-left: 10%;
+			margin-right: 10%;
+		}	
+		.linha{
+		  width: 3px;
+		  height: 40px;
+		  background-color: #b6761d;
+		  display: block;
+		  margin-left: 93%;
+		  margin-top: .5rem;
+		  margin-bottom: .5rem;
+		}
+
+		.fa-circle{
+		  font-size: 0.6rem;
+		  margin: 0.5rem;
+		  margin-top: .3rem;
+		}
+
+		.texto{
+		  position: relative;
+		  top: -.5rem;
+		  font-size: .7rem;
+		  margin-right: 1rem;
+		  letter-spacing: .15rem;
+		  font-family: avenirblack;
+		}
+		/* .texto, */ 
+		#menu{
+		  position: fixed;
+		  z-index: 999;
+		  top: 30%;
+		  right: 50px;
+		  list-style: none;
+		  width: 200px;
+		  text-align: right;
+		}
+		.number{
+		  display: block;
+		  text-align: right;
+		  margin-bottom: .4rem;
+		  font-size: 1.3rem;
+		  margin-top: .5rem;
+		  font-family: avenirblack;
+
+		}
+		.number, .texto{
+		  color: #b6761d;
+		}
+
+
+		.sem{
+		  display: none;
+		}
+		.com{
+		  display: inline;
+		}
+
+		.rolar, .rolar:hover, .rolar:visited{
+		  text-decoration: none;
+		  color: #484848;
+		}
+
+		.ativado, .ativado:hover, .ativado:visited{
+		  text-decoration: none;
+		  color: #b6761d;
+		}
+		body{
+			background-color: #000;
+			color: #fff;
+		}
+		.img{
+			display: block;
+			width: 50%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	</style>
+</head>
+<body>
+	<a href=""></a>
+	<ul id="menu" class="overthrow">
+		<li>
+			<span class="um number">01</span>
+			<span class="um texto">START</span><a id="um" class="ax rolar" href="#start"><i class="fas fa-circle"></i></a>
+			<span class="um linha"></span>
+		</li>
+		<li>
+			<span class="dois number">02</span>
+			<span class="dois texto">ONE</span><a id="dois" class="ax rolar" href="#one"><i class="fas fa-circle"></i></a>
+			<span class="dois linha"></span>
+		</li>
+		<li>
+			<span class="tres number">03</span>
+			<span class="tres texto">TWO</span><a id="tres" class="ax rolar" href="#two"><i class="fas fa-circle"></i></a>
+			<span class="tres linha"></span>
+		</li>
+		<li>
+			<span class="quatro number">04</span>
+			<span class="quatro texto">THREE</span><a id="quatro" class="ax rolar" href="#three"><i class="fas fa-circle"></i></a>
+			<span class="quatro linha"></span>
+		</li>
+		<li>
+			<span class="cinco number">05</span>
+			<span class="cinco texto">FOUR</span><a id="cinco" class="ax rolar" href="#four"><i class="fas fa-circle"></i></a>
+			<span class="cinco linha"></span>
+		</li>
+		<li>
+			<span class="seis number">06</span>
+			<span class="seis texto">LAST</span><a id="seis" class="ax rolar" href="#last"><i class="fas fa-circle"></i></a>
+			<span class="seis linha"></span>
+		</li>
+
+	</ul>
+	<div class="main">
+		<div id="start" >
+	    	<h1>Start</h1>
+			
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+	  		<br>
+	  		<img class="img" src="img/img-teste.jpg" alt="">
+	  		<br>
+	  		<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+	  		<br>
+		</div>
+		<div id="one" >
+	    	<h1>One</h1>
+			
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+	  		<br>
+	  		<img class="img" src="img/img-teste.jpg" alt="">
+	  		<br>
+	  		<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+	  		<br>
+		</div>
+		<div id="two" >
+	    	<h1>Two</h1>
+			
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+	  		<br>
+	  		<img class="img" src="img/img-teste.jpg" alt="">
+	  		<br>
+	  		<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+	  		<br>
+		</div>
+		<div id="three" >
+	    	<h1>Three</h1>
+			
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+	  		<br>
+	  		<img class="img" src="img/img-teste.jpg" alt="">
+	  		<br>
+	  		<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+	  		<br>
+		</div>
+		<div id="four" >
+	    	<h1>Four</h1>
+			
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+	  		<br>
+	  		<img class="img" src="img/img-teste.jpg" alt="">
+	  		<br>
+	  		<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+	  		<br>
+		</div>
+		<div id="last" >
+	    	<h1>Last</h1>
+			
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+			<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+			<br>
+	  		<img class="img" src="img/img-teste.jpg" alt="">
+	  		<br>
+	  		<p>Sit duis in in laborum labore cillum culpa dolor minim veniam in sint occaecat excepteur est eu do voluptate excepteur enim proident velit consequat adipisicing ut do sit excepteur ea nostrud esse cillum enim nostrud sint amet eiusmod in ex in dolore dolore eiusmod dolore qui fugiat officia dolore occaecat ea reprehenderit elit culpa duis culpa esse pariatur occaecat quis commodo eu do eu exercitation mollit nostrud reprehenderit cillum nulla et id minim do consequat ut cillum ea proident ut sint commodo labore qui proident duis laboris duis reprehenderit tempor ullamco in sit ex magna sed commodo do sed laborum est incididunt irure cillum eiusmod nulla ut incididunt ea qui cillum excepteur ad consectetur et do ut laboris magna velit dolore esse sint tempor incididunt pariatur incididunt irure irure elit ut culpa enim labore commodo deserunt cupidatat id consequat culpa dolor sunt quis ea anim aliquip fugiat ut in in in ad eiusmod incididunt anim labore minim consectetur elit esse proident reprehenderit ut amet nisi occaecat occaecat officia in laboris mollit cillum quis quis irure occaecat laboris exercitation officia quis est excepteur ut et dolore aute irure adipisicing consectetur est commodo sed occaecat tempor ullamco in do commodo.</p>
+	  		<br>
+		</div>
+	</div>
+</body>
+</html>
+
+<script>
+function onFinish(){
+    window.scrollTo(0, 1);
+}
+onFinish();
+
+// menu direito
+
+$( ".number" ).addClass( "sem" );
+$( ".texto" ).addClass( "sem" );
+$( ".linha" ).addClass( "sem" );
+
+function ajudante(classe){
+	$( ".number" ).addClass( "sem" );
+	$( ".texto" ).addClass( "sem" );
+	$( ".linha" ).addClass( "sem" );
+	$( "#menu a" ).addClass( "rolar" ).removeClass( "ativado" );
+	$( "#"+classe ).addClass( "ativado" ).removeClass( "rolar" );
+	$( "."+classe ).removeClass( "sem" ).stop().fadeOut(0).fadeIn(1500);
+}
+
+var lastId, topMenu = $("#menu"),
+    topMenuHeight = topMenu.outerHeight()+15,
+    // All list items
+    menuItems = topMenu.find("a"),
+    // Anchors corresponding to menu items
+    scrollItems = menuItems.map(function(){
+      var item = $($(this).attr("href"));
+      if (item.length) { return item; }
+    });
+var nome = "";
+
+
+// transição 
+
+var $doc = $('html, body');
+	$('.rolar').click(function() {
+    $doc.animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 2000);
+    return false;
+});
+
+// Bind to scroll
+$(window).scroll(function(){
+   // Get container scroll position
+   var fromTop = $(this).scrollTop()+topMenuHeight;
+   
+   // Get id of current scroll item
+   var cur = scrollItems.map(function(){
+     if ($(this).offset().top < fromTop)
+       return this;
+   });
+   // Get the id of the current element
+   cur = cur[cur.length-1];
+   var id = cur && cur.length ? cur[0].id : "";
+   if (lastId !== id) {
+       lastId = id;
+       // Set/remove active class
+       if(lastId == "start"){
+       	var novo = "um";
+        
+       	ajudante(novo);
+       	event.preventDefault();
+       }
+       if(lastId == "one"){
+       	var novo = "dois";
+       	
+        ajudante(novo);
+       	event.preventDefault();
+       }
+       if(lastId == "two"){
+       	var novo = "tres";
+       	
+        ajudante(novo);
+       	event.preventDefault();
+       }
+       if(lastId == "three"){
+        var novo = "quatro";
+        
+        ajudante(novo);
+        event.preventDefault();
+       }
+       if(lastId == "four"){
+       	var novo = "cinco";
+       	
+        ajudante(novo);
+       	event.preventDefault();
+       }
+       if(lastId == "last"){
+       	var novo = "seis";
+       	
+        ajudante(novo);
+       	event.preventDefault();
+       }
+    }                   
+});
+</script>
