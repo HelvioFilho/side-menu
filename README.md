@@ -1,2 +1,2 @@
 # side-menu
- Side menu animate
+Animated side menu
