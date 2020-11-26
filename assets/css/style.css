@@ -1,0 +1,73 @@
+@font-face {
+	font-family: avenirblack;
+	src: url('../font/AvenirBlack.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.main{
+	margin-left: 10%;
+	margin-right: 10%;
+}	
+.line{
+  width: 3px;
+  height: 40px;
+  background-color: #b6761d;
+  display: block;
+  margin-left: 93%;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+.fa-circle{
+  font-size: 0.6rem;
+  margin: 0.5rem;
+  margin-top: .3rem;
+}
+.text{
+  position: relative;
+  top: 0;
+  font-size: .7rem;
+  margin-right: 1rem;
+  letter-spacing: .15rem;
+  font-family: avenirblack;
+}
+#menu{
+  position: fixed;
+  z-index: 999;
+  top: 30%;
+  right: 50px;
+  list-style: none;
+  width: 200px;
+  text-align: right;
+}
+.number{
+  display: block;
+  text-align: right;
+  margin-bottom: .4rem;
+  font-size: 1.3rem;
+  margin-top: .5rem;
+  font-family: avenirblack;
+}
+.number, .text{
+  color: #b6761d;
+}
+.without{
+  display: none;
+}
+.to_roll, .to_roll:hover, .to_roll:visited{
+  text-decoration: none;
+  color: #484848;
+}
+.activated, .activated:hover, .activated:visited{
+  text-decoration: none;
+  color: #b6761d;
+}
+body{
+	background-color: #000;
+	color: #fff;
+}
+.img{
+	display: block;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
